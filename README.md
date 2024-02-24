@@ -1,3 +1,16 @@
+# LinuxPerformanceTools
+<a name="top"></a>
+
+# Table of Contents
+1. [IncreaseSwap File Linux](#1-increaseswap-file-linux) 
+    
+    1.1 [Usage](#usage)
+
+2. [Average CPU Load](#2-average-cpu-load)
+
+    2.1 [Usage](#usage-1)
+
+
 # 1. IncreaseSwap File Linux
 
 This simple script is designed to increase the swap file size on a Linux system. It's a straightforward way to expand your system's virtual memory, particularly useful for scenarios involving memory-intensive tasks or when running low on physical memory.
@@ -23,8 +36,10 @@ cd LinuxPerformanceTools
 chmod +x IncreaseSwap.sh
 ./IncreaseSwap.sh
 ```
+[Back to Top](#top)
 
 **Note:** The script requires your system's root password. Replace `<SYSTEM-Password>` with your actual root password in the script.
+
 ---
 
 # 2. Average CPU Load
@@ -47,6 +62,7 @@ cd LinuxPerformanceTools
 chmod +x AvgLoadCPU.sh
 ./AvgLoadCPU.sh -n top -d 60 -i 1 -p 5
 ```
+[Back to Top](#top)
 
 This command will monitor the CPU load of the process 'top' for 60 seconds, reading the usage every 1 second and printing the average every 5 seconds.
 
